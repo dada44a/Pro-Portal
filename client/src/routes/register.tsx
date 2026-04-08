@@ -1,7 +1,7 @@
 import { Card, CardBody, CardDescription, CardTitle } from '#/components/Card';
 import { useLocalMutation } from '#/hooks/UseLocalQuery';
 import { SignupSchema } from '#/utils/ZodSSchema';
-import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/register')({
   component: RouteComponent,
@@ -80,6 +80,9 @@ function RouteComponent() {
               <input type="password" placeholder="Confirm Password" className="input input-bordered" required value={formState.confirmPassword} onChange={(e) => setFormState({ ...formState, confirmPassword: e.target.value })} />
               <button className="btn btn-primary w-full" type="submit">Sign Up</button>
             </form>
+            <Link to="/" className="text-black">
+              Already have an account? Login here
+            </Link>
           </CardDescription>
         </CardBody>
       </Card>

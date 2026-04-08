@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from '@tanstack/react-router'
+import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
 import { Card, CardBody, CardDescription, CardTitle } from '../components/Card';
 
 import { toast } from "react-toastify";
@@ -54,6 +54,10 @@ function App() {
                 <input type="password" placeholder="Password" className="input input-bordered" value={formData.password} onChange={(e) => setFormData({ ...formData, password: e.target.value })} required />
                 <button className="btn btn-primary w-full" type="submit">Login</button>
               </form>
+
+              <Link to="/register" className="text-black">
+                Don't have an account? Register here
+              </Link>
             </CardDescription>
           </CardBody>
         </Card>
