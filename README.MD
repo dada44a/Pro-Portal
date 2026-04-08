@@ -1,6 +1,6 @@
-# 🏡 Pro Portal – Real Estate Auth + Favourites
+# Pro Portal Real Estate Auth + Favourites
 
-## 📌 Overview
+## Overview
 
 This project is a modern real-estate portal that provides a platform for buyers to browse properties and manage their favourites. It features a secure, session-based authentication system with automatic token refreshing.
 
@@ -13,7 +13,7 @@ The application includes:
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Framework**: React (Vite-powered)
@@ -32,7 +32,7 @@ The application includes:
 
 ---
 
-## 🔐 Features
+## Features
 
 ### 1. Robust Authentication
 - **Secure Login/Signup**: Passwords are hashed using `bcryptjs`.
@@ -55,7 +55,7 @@ A personalized area showing:
 
 ---
 
-## 🗄️ Database Design (SQLite)
+## Database Design (SQLite)
 
 ### Users Table
 | Field | Type | Description |
@@ -85,10 +85,19 @@ A personalized area showing:
 
 ---
 
-## ▶️ Setup & Installation
+##  Setup & Installation
 
 ### 1. Prerequisites
 - Node.js installed.
+- Git installed.
+
+```bash
+git clone <url-below>
+http: https://github.com/dada44a/Pro-Portal.git
+ssh: git@github.com:dada44a/Pro-Portal.git
+
+```
+
 
 ### 2. Environment Variables
 Create a `.env`file in the `client` directory:
@@ -113,7 +122,7 @@ npm run dev
 
 ### 4. Run Frontend
 ```bash
-cd client2
+cd client
 npm install
 npm run dev
 ```
@@ -121,7 +130,7 @@ The app will be available at `http://localhost:3000`.
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Auth
 - `POST /api/auth/register` - Create a new account
@@ -140,5 +149,5 @@ The app will be available at `http://localhost:3000`.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 - **Anish Ghimire**
