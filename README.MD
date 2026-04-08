@@ -107,8 +107,11 @@ VITE_API_URL=http://localhost:4000/api
 
 Create a `.env` file in the `server` directory:
 ```env
+DB_FILE_NAME=file:database.sqlite
+JWT_ACCESS_SECRET=f9d3c2a1e6b5478fa0c1d2e3b4f5a6978c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f
+JWT_REFRESH_SECRET=f9d3c2a1e6b5478fa0c1d2e3b4f5a6978c9d0e1f2aahagsvgd6e7f8a9b0c1d2sjy
 PORT=4000
-JWT_SECRET=your_jwt_secret_key
+NODE_ENV=DEVELOPMENT
 ORIGIN=http://localhost:3000
 ```
 
