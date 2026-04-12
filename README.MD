@@ -152,5 +152,18 @@ The app will be available at `http://localhost:3000`.
 
 ---
 
+### Example Flow
+
+To experience the full functionality of the application, follow this standard user journey:
+
+1.  **Sign Up**: Navigate to `/register`, fill in your details, and create an account. Passwords are securely hashed before storage.
+2.  **Login**: You will be redirected to the login page. Enter your credentials. Upon success, the server issues an `accessToken` and a `refreshToken` via secure `HttpOnly` cookies.
+3.  **Browse & Favourite**: On the dashboard, you'll see a list of "Available Properties". Click the **+** button on any property to add it to your personal favourites.
+4.  **Persistence**: Refresh the page. You'll notice your favourites are still there, fetched securely from the backend based on your session.
+5.  **Seamless Session**: If your `accessToken` expires while you are browsing (e.g., after 15 mins), the frontend automatically calls the `/refresh` endpoint using your `refreshToken` to get a new session without interrupting your experience.
+6.  **Logout**: Click "Sign Out" to clear your cookies and securely end your session on the server.
+
+---
+
 ##  Author
 - **Anish Ghimire**
